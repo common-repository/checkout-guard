@@ -1,0 +1,190 @@
+.cg-admin .screen-heading {
+	background-color: #7f54b3;
+	padding: 10px 20px;
+	border-radius: 8px;
+	margin-bottom: 20px;
+	color: #fff;
+}
+.cg-admin > .description{
+	font-size: 15px;
+	margin-bottom: 22px;
+}
+.cg-admin .screen-heading .shield{
+	vertical-align: top;
+	height: 28px;
+}
+.cg-admin .screen-heading span {
+	font-weight: 700;
+}
+
+#cg-admin-form .inside h2{
+	font-size: 18px;
+	border-bottom: 1px solid #ccc;
+	padding: 0 0 8px 0;
+}
+#cg-admin-form .forminp .description{
+	font-size: 13px;
+	color: #646970;
+}
+#cg-admin-form .forminp.forminp-textarea > p{
+	font-size: 13px;
+	margin-bottom: 6px;
+	color: #646970;
+}
+
+#cg-admin-form .forminp label{
+	display: inline-flex;
+	flex-direction: row-reverse;
+}
+#cg-admin-form .forminp label > .checkbox-desc{
+	order: 0;
+	margin-left: 14px;
+}
+#cg-admin-form .forminp label > *:not(.checkbox-desc) {
+	order: 1; /* Reverse the order of other items */
+}
+
+#cg-admin-form .forminp label .woocommerce-help-tip{
+	font-size: 20px;
+	line-height: 22px;
+	height: auto;
+	margin: 0 10px 0 0;
+}
+
+#cg-admin-form .forminp input{
+	margin-right: 6px;
+}
+
+#cg-admin-form fieldset .description {
+	display: none;
+}
+
+#cg-admin-form textarea{
+	min-height: 120px;
+}
+#cg-admin-form textarea.message{
+	min-height: 60px;
+}
+
+#cg-admin-form .wc-settings-row-sub-option{
+}
+
+
+#cg-admin-form .wc-settings-row-main-switch th,
+#cg-admin-form .wc-settings-row-main-switch td {
+	padding:  12px 0 0;
+}
+/**
+* Tippy info
+ */
+.tippy-box {
+	padding: 10px;
+	background-color: #2C3338;
+}
+.tippy-box .gc-setting-image {
+	margin-top: 20px;
+	text-align: center;
+	display: block;
+}
+.tippy-box img{
+	width: 100%;
+}
+
+
+/**
+ * Checkbox Toggle UI
+ */
+#cg-admin-form input[type="checkbox"].form-ui-toggle {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	-webkit-tap-highlight-color: transparent;
+	width: auto;
+	height: auto;
+	vertical-align: middle;
+	position: relative;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	margin: 0 4px;
+	background: none;
+	box-shadow: none;
+}
+#cg-admin-form input[type="checkbox"].form-ui-toggle.disabled{
+	cursor: not-allowed;
+}
+#cg-admin-form input[type="checkbox"].form-ui-toggle:focus {
+	box-shadow: none;
+}
+#cg-admin-form input[type="checkbox"].form-ui-toggle:after {
+	content: '';
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 20px;
+	text-indent: -14px;
+	color: #ffffff;
+	width: 40px;
+	height: 20px;
+	display: inline-block;
+	border-radius: 72px;
+	box-shadow: 0 0 12px rgb(0 0 0 / 15%) inset;
+	background: rgba(123, 81, 174, 0.30);
+}
+#cg-admin-form input[type="checkbox"].form-ui-toggle.disabled:after{
+	background: rgba(0, 0, 0, 0.10);
+}
+
+#cg-admin-form input[type="checkbox"].form-ui-toggle:before {
+	content: '';
+	width: 12px;
+	height: 12px;
+	display: block;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	margin: 0;
+	border-radius: 50%;
+	background-color: #ffffff;
+}
+#cg-admin-form input[type="checkbox"].form-ui-toggle:checked:before {
+	left: 24px;
+	margin: 0;
+	background-color: #ffffff;
+	top: 4px;
+}
+#cg-admin-form input[type="checkbox"].form-ui-toggle,
+#cg-admin-form input[type="checkbox"].form-ui-toggle:before,
+#cg-admin-form input[type="checkbox"].form-ui-toggle:after,
+#cg-admin-form input[type="checkbox"].form-ui-toggle:checked:before,
+#cg-admin-form input[type="checkbox"].form-ui-toggle:checked:after {
+	transition: ease .15s;
+}
+#cg-admin-form input[type="checkbox"].form-ui-toggle:checked:after {
+	content: 'On';
+	background-color: #7F54B3;
+}
+
+/** 
+* Settings page
+ */
+#cg-admin-form-wrapper {
+	display: flex;
+	gap: 20px;
+}
+
+
+#cg-admin-form {
+	flex-grow: 1;
+}
+
+#cg-admin-form-wrapper .cg-admin-sidebar {
+	width: 340px;
+}
+
+#cg-admin-form-wrapper .cg-admin-sidebar > div {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 0 14px;
+	margin-bottom: 12px;
+}
